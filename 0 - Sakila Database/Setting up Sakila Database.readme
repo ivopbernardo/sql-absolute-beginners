@@ -1,0 +1,13 @@
+# Sakila Database Setup
+This folder contains the setup for the Sakila database, a sample database used for practicing SQL queries. The Sakila database represents a fictional DVD rental store.
+
+## Overview
+The Sakila database is commonly used for learning and practicing SQL queries due to its realistic schema and data. It consists of various tables representing entities such as films, customers, rentals, payments, and more.
+
+## Files
+sakila-schema.sql: This SQL script contains the schema definition for the Sakila database, including table creations, column definitions, and constraints.
+sakila-data.sql: This SQL script contains the data insertion statements to populate the Sakila tables with sample data.~
+
+## Running the Files
+First, start by running the `sakila-schema.sql` file in your MySQL (workbench or command line). This will create the table structure we will need to use throughout these scripts. 
+After running the schema script, run `sakila-data.sql` to populate the tables needed for the practical examples.
