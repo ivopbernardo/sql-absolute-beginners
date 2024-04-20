@@ -1,6 +1,6 @@
 # SQL Query Examples
 Welcome to the SQL Query Examples folder! In this repository, you'll find a collection of SQL queries to help you navigate and manipulate the basic query clauses. These scripts are related
-to chapter 3 of my Book "SQL for Absolute Beginners - Unlocking the Power of MySQL: A Comprehensive Guide for Absolute Beginners"
+to chapter 4 of my Book "SQL for Absolute Beginners - Unlocking the Power of MySQL: A Comprehensive Guide for Absolute Beginners"
 
 ## Overview
 This repository is designed to provide hands-on examples for SQL beginners and enthusiasts alike. 
@@ -8,13 +8,10 @@ This repository is designed to provide hands-on examples for SQL beginners and e
 ## Contents
 The folder contains:
 
-* 1. Simple Select Statements.sql: This file contains basic examples of SELECT statements, demonstrating how to retrieve data from a table.
-
-* 2. Simple Filter Statements.sql: Explore how to filter data using WHERE clauses in SQL with these  examples.
-
-* 3. New Columns and Calculations: Learn how to create new columns and perform calculations on your data using SQL's features.
-
-* 4. Dive deeper into SQL query construction with examples showcasing different query clauses like ORDER BY, GROUP BY, HAVING and more.
+* 1 - Data Types - Numeric.sql: This file contains examples demonstrating the usage of numeric data types in MySQL.
+* 2 - Data Types Characters and Text.sql: Explore how to work with character and text data types in MySQL with these examples.
+* 3 - Data Types - Dates.sql: Learn how to handle date data types in MySQL and perform operations on dates.
+* 4 - Data Types - Casting Columns.sql: Dive deeper into casting columns and converting data types in MySQL.
 
 ## How to Use
 Simply navigate to the file of interest and explore the SQL queries provided. Each file contains comments explaining the purpose and usage of the queries. To make these queries work, you need to setup the `sakila` database first.
