@@ -1,5 +1,5 @@
-# Let's create our example table that contains 
-# Students from an arbitrary College
+/* Let's create our example table that contains 
+ Students from an arbitrary College */
 
 create table sandbox.students (
 	student_id integer auto_increment primary key,
@@ -23,25 +23,24 @@ insert into sandbox.students (
     ('Robert Jones', 'Chemistry, Biology, Mathematics', 21, '2001-06-02', 'Chemistry');
     
     
-# Remember the IN operator that substituted the multiple or conditions? 
+-- Remember the IN operator that substituted the multiple or conditions? 
 select * from sandbox.students
 where student_full_name IN ('Joe Adams','John Smith','Amy Smith');
 
-# NOT is able to negate commands - when combined with IN we are asking for 
-# every student that has a name different than the ones named on the list
+-- NOT is able to negate commands - when combined with IN we are asking for 
+-- every student that has a name different than the ones named on the list
 select * from sandbox.students
 where student_full_name NOT IN ('Joe Adams','John Smith','Amy Smith');
 
-# Another feature of NOT is that we can use it with the other
-# filters we've seen to negate that condition 
+-- Another feature of NOT is that we can use it with the other filters we've seen to negate that condition 
 
-# An example is negating: 
+-- An example is negating =: 
 select * from sandbox.students
 where NOT student_full_name = 'Joe Adams';
 
-# Or helping with other more complex conditions
+-- It can also help with other more complex conditions
 select * from sandbox.students
 where student_age = 22 and NOT student_full_name = 'Joe Williams';
 
-# NOT operator negates the condition and extracts everything except 
-# what's stated in the condition right next to it.
+/* NOT operator negates the condition and extracts everything except 
+what's stated in the condition right next to it. */

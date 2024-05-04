@@ -1,5 +1,5 @@
-# Create a new table called Students and add
-# information about students
+/* First, we'll create a new table called Students and add
+information about students */
 
 create table sandbox.students (
 	student_id integer,
@@ -16,53 +16,51 @@ insert into sandbox.students (
              (4, 'Anne Smith', '2000-01-02', 'Mathematics'),
              (5, 'May John', '2000-06-06', 'History');
 
-# Updating Information on Tables
-# Let's imagine that we collected information about students
-# but we got May John's favorite class wrong - she really likes Mathematics!
+/* Let's imagine that we collected information about students
+but we got May John's favorite class wrongly - she really likes Mathematics!*/
 
-# How can we update this table without recreating it or deleting the row?
+-- How can we update this table without recreating it or deleting the row?
+-- We can use the UPDATE -> SET -> WHERE combination
 
-# We have the UPDATE -> SET -> WHERE combination
-
-# We need to turn off safe update mode
+-- We need to turn off safe update mode
 SET SQL_SAFE_UPDATES = 0;
 
 update sandbox.students
 set favorite_class = "Mathematics"
 where student_id = 5;
 
-# Let's now look and the sandbox.students
+-- Let's now look and the sandbox.students
 select * from sandbox.students;
 
-# Cool, we've just changed "May John's" favorite class!
+/* Cool, we've just changed "May John's" favorite class!
+The nice part? Everything we've learned with WHERE applies 
+here, for example using multiple conditions
 
-# Cool part? Everything we've learned with where applies 
-# here, for example using multiple conditions
+Imagining we would like to change favorite_class 
+of multiple students at the same time*/
 
-# Imagining we would like to change favorite_class 
-# of multiple students at the same time
 update sandbox.students
 set favorite_class = "Arts"
 where student_full_name = 'Joe Doe' or student_full_name = 'John Smith';
 
 select * from sandbox.students;
 
-# Of course, updating these values are also restricted
-# In our case, we can't set the name of the student 
-# to null because of the properties of the table
+/* Of course, updating these values is also restricted
+In the next case, we can't set the name of the student 
+to null because of the properties of the table*/
+
 update sandbox.students
 set student_full_name = NULL
 where student_id = 1;
 
-# You can also update multiple columns at once:
+-- You can also update multiple columns at once:
 update sandbox.students
 set student_full_name = "John", favorite_class = "Mathematics"
 where student_id = 1;
 
 select * from sandbox.students;
 
-# Be very mindful of having a where clause or 
-# else you will end up updating the entire table
+-- Be very mindful of having a where clause or else you will end up updating the entire table
 update sandbox.students
 set student_full_name = "John";
 
