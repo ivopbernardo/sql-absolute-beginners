@@ -1,5 +1,5 @@
 -- Run the statements below to create the structure and data
--- we'll need fo the exercises
+-- we'll need for the exercises
 
 CREATE DATABASE exercises;
 
