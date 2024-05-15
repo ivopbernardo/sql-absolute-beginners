@@ -3,7 +3,7 @@ SQL (Structured Query Language) is a powerful tool used for managing and manipul
 
 This  guide covers all the fundamental concepts and techniques you need to know to become proficient in SQL. From basic querying to advanced filtering, each chapter is designed to provide you with practical knowledge and hands-on experience.
 
-This repository serves as the companion materials for the book [https://www.amazon.com/SQL-Absolute-Beginners-Unlocking-Comprehensive-ebook/dp/B0CYTKXYSB](SQL Fundamentals: A Comprehensive Guide for Beginners) authored by [https://www.linkedin.com/in/ivobernardo/](Ivo Bernardo), available for purchase on Amazon and other major platforms.
+This repository serves as the companion materials for the book [SQL Fundamentals: A Comprehensive Guide for Beginners](https://www.amazon.com/SQL-Absolute-Beginners-Unlocking-Comprehensive-ebook/dp/B0CYTKXYSB) authored by [Ivo Bernardo](https://www.linkedin.com/in/ivobernardo/), available for purchase on Amazon and other major platforms.
 
 # Table of Contents
 
